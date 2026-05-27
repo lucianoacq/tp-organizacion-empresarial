@@ -55,3 +55,17 @@ print(producto_top)
 
 # Cerrar archivo
 archivo.close()
+
+
+# Crear archivo de resultados
+resultado = open("../resultados/resumen.txt", "w")
+
+resultado.write("TOTAL DE VENTAS:\n")
+resultado.write(str(total))
+
+resultado.write("\n\nPRODUCTO MAS VENDIDO:\n")
+resultado.write(producto_top)
+
+resultado.close()
+
+print("\nResumen generado correctamente.")

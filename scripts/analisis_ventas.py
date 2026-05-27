@@ -1,10 +1,10 @@
 import csv
 
 # Abrir archivo CSV
-archivo = open("../datos/ventas.csv")
+archivo = open(r"C:\Users\Usuario\OneDrive\TECNICATURA EN PROGRAMACION\1er Cuatrimestre\Organización Empresarial\Unidad 4\tp-organizacion-empresarial\datos\ventas.csv", encoding="utf-8-sig")
 
 # Leer contenido del CSV
-lector = csv.DictReader(archivo)
+lector = csv.DictReader(archivo, delimiter=";")
 
 # Variable para guardar total de ventas
 total = 0
@@ -58,7 +58,7 @@ archivo.close()
 
 
 # Crear archivo de resultados
-resultado = open("../resultados/resumen.txt", "w")
+resultado = open("c:/Users/Usuario/OneDrive/TECNICATURA EN PROGRAMACION/1er Cuatrimestre/Organización Empresarial/Unidad 4/tp-organizacion-empresarial/resultados/resumen.txt", "w")
 
 resultado.write("TOTAL DE VENTAS:\n")
 resultado.write(str(total))
